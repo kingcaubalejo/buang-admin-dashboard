@@ -18,6 +18,9 @@ const routes: Routes = [
       {
         path: 'dashboard',
         loadChildren: () => import('./dashboard/dashboard.module').then(d => d.DashboardModule)
+      }, {
+        path: 'settings',
+        loadChildren: () => import('./settings/settings.module').then(s => s.SettingsModule)
       }
     ]
 
