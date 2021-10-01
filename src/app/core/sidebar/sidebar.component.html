@@ -9,11 +9,12 @@
               <li><a></a></li>
             </ul>
             <p class="menu-label">
-              Administration
+              Custom
             </p>
             <ul class="menu-list">
-              <li><a [routerLink]="['/settings']">Settings</a></li>
-              <li>
+              <li><a [routerLink]="['/settings']">Application</a></li>
+              <li><a>Pages</a></li>
+              <li *ngHide="true">
                 <a class="is-active">Manage Your Team</a>
                 <ul>
                   <li><a>Members</a></li>
@@ -21,17 +22,40 @@
                   <li><a>Add a member</a></li>
                 </ul>
               </li>
-              <li><a>Invitations</a></li>
-              <li><a>Cloud Storage Environment Settings</a></li>
-              <li><a>Authentication</a></li>
+              <li *ngHide="true"><a>Invitations</a></li>
+              <li *ngHide="true"><a>Cloud Storage Environment Settings</a></li>
             </ul>
             <p class="menu-label">
-              Transactions
+              Layout
             </p>
             <ul class="menu-list">
-              <li><a>Payments</a></li>
-              <li><a>Transfers</a></li>
-              <li><a>Balance</a></li>
+              <li><a>Themes</a></li>
+              <li><a>General</a></li>
+              <li><a>Builder</a></li>
+            </ul>
+            <p class="menu-label">
+              Elements
+            </p>
+            <ul class="menu-list">
+              <li><a>Invoice</a></li>
+              <li><a>Forms</a></li>
+              <li><a>Board</a></li>
+              <li><a>Calendar</a></li>
+              <li><a>Products</a></li>
+              <li><a>Icon</a></li>
+            </ul>
+            <p class="menu-label">
+              Features
+            </p>
+            <ul class="menu-list">
+              <li><a>Animations</a></li>
+              <li><a>Components</a></li>
+              <li><a>Table</a></li>
+              <li><a>Cards</a></li>
+              <li><a>Charts</a></li>
+              <li><a>UI Kits</a></li>
+              <li><a>Widgets</a></li>
+              <li><a>Maps</a></li>
             </ul>
           </aside>
     </div>
