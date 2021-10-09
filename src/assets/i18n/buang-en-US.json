@@ -1,0 +1,8 @@
+{
+    "COMMON": {
+        "ADD_BUTTON": "Add",
+        "CANCEL_BUTTON": "Cancel",
+        "RESET_BUTTON": "Reset",
+        "FILTER_BUTTON": "Apply"
+    }
+}

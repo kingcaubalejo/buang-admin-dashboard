@@ -14,7 +14,7 @@
             <ul class="menu-list">
               <li><a [routerLink]="['/settings']">Application</a></li>
               <li><a>Pages</a></li>
-              <li *ngHide="true">
+              <li *ngIf="!true">
                 <a class="is-active">Manage Your Team</a>
                 <ul>
                   <li><a>Members</a></li>
@@ -22,8 +22,8 @@
                   <li><a>Add a member</a></li>
                 </ul>
               </li>
-              <li *ngHide="true"><a>Invitations</a></li>
-              <li *ngHide="true"><a>Cloud Storage Environment Settings</a></li>
+              <li *ngIf="!true"><a>Invitations</a></li>
+              <li *ngIf="!true"><a>Cloud Storage Environment Settings</a></li>
             </ul>
             <p class="menu-label">
               Layout

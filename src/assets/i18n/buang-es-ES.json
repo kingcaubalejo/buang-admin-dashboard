@@ -1,0 +1,8 @@
+{
+    "COMMON": {
+        "ADD_BUTTON": "Anadir",
+        "CANCEL_BUTTON": "Cancelar",
+        "RESET_BUTTON": "Restablecer",
+        "FILTER_BUTTON": "Aplicar"
+    }
+}

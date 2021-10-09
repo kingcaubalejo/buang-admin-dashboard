@@ -1,2 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../node_modules/bulma/bulma.sass';
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #1f2833;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: gray;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #1f2833;
+    border-radius: 20px;
+}

@@ -21,6 +21,9 @@ const routes: Routes = [
       }, {
         path: 'settings',
         loadChildren: () => import('./settings/settings.module').then(s => s.SettingsModule)
+      }, {
+        path: 'charts',
+        loadChildren: () => import('./chart/chart.module').then(c => c.ChartModule)
       }
     ]
 
