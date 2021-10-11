@@ -13,7 +13,6 @@ import { RadarComponent } from './radar/radar.component';
 import { ScatterComponent } from './scatter/scatter.component';
 
 import { ChartsModule } from 'ng2-charts';
-import { HideMeDirective } from 'src/app/shared/directives/hide-me.directive';
 
 
 
@@ -34,7 +33,6 @@ const route: Routes = [
     PolarAreaComponent,
     RadarComponent,
     ScatterComponent,
-    HideMeDirective
   ],
   imports: [
     CommonModule,

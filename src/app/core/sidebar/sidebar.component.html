@@ -8,13 +8,13 @@
               <li><a [routerLink]="['/admin/dashboard']">Dashboard</a></li>
               <li><a></a></li>
             </ul>
-            <p class="menu-label">
+            <p class="menu-label" *ngIf="!hide">
               Custom
             </p>
-            <ul class="menu-list">
+            <ul class="menu-list" *ngIf="!hide">
               <li><a [routerLink]="['/admin/settings']">Application</a></li>
               <li><a>Pages</a></li>
-              <li *ngIf="!true">
+              <li>
                 <a class="is-active">Manage Your Team</a>
                 <ul>
                   <li><a>Members</a></li>
@@ -22,21 +22,21 @@
                   <li><a>Add a member</a></li>
                 </ul>
               </li>
-              <li *ngIf="!true"><a>Invitations</a></li>
-              <li *ngIf="!true"><a>Cloud Storage Environment Settings</a></li>
+              <li><a>Invitations</a></li>
+              <li><a>Cloud Storage Environment Settings</a></li>
             </ul>
-            <p class="menu-label">
+            <p class="menu-label" *ngIf="!hide">
               Layout
             </p>
-            <ul class="menu-list">
+            <ul class="menu-list" *ngIf="!hide">
               <li><a>Themes</a></li>
               <li><a>General</a></li>
               <li><a>Builder</a></li>
             </ul>
-            <p class="menu-label">
+            <p class="menu-label" *ngIf="!hide">
               Elements
             </p>
-            <ul class="menu-list">
+            <ul class="menu-list" *ngIf="!hide">
               <li><a>Invoice</a></li>
               <li><a>Forms</a></li>
               <li><a>Board</a></li>
