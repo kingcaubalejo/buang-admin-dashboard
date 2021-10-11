@@ -1,8 +1,16 @@
-<div style="display: block;">
-    <canvas baseChart
-        [datasets]="bubbleChartData"
-        [options]="bubbleChartOptions"
-        [legend]="bubbleChartLegend"
-        [chartType]="bubbleChartType">
-    </canvas>
+<div class="container is-fluid">
+    <div class="columns is-centered">
+        <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <canvas baseChart
+                    [datasets]="bubbleChartData"
+                    [options]="bubbleChartOptions"
+                    [legend]="bubbleChartLegend"
+                    [chartType]="bubbleChartType">
+                </canvas>
+              </div>
+            </div>
+          </div>
+    </div>
 </div>

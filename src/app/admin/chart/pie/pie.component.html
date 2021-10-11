@@ -1,10 +1,18 @@
-<div style="display: block;">
-    <canvas baseChart 
-        [data]="pieChartData" 
-        [labels]="pieChartLabels" 
-        [chartType]="pieChartType"
-        [options]="pieChartOptions"
-        [plugins]="pieChartPlugin"
-        [legend]="pieChartLegend">
-    </canvas>
+<div class="container is-fluid">
+    <div class="columns is-centered">
+        <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <canvas baseChart 
+                    [data]="pieChartData" 
+                    [labels]="pieChartLabels" 
+                    [chartType]="pieChartType"
+                    [options]="pieChartOptions"
+                    [plugins]="pieChartPlugin"
+                    [legend]="pieChartLegend">
+                </canvas>
+              </div>
+            </div>
+          </div>
+    </div>
 </div>

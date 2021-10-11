@@ -1,8 +1,18 @@
-<div style="display: block;">
-    <canvas baseChart
-        [datasets]="radarChartData"
-        [options]="radarChartOptions"
-        [labels]="radarChartLabels"
-        [chartType]="radarChartType">
-    </canvas>
+<div class="container is-fluid">
+    <div class="columns is-centered">
+        <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <div style="display: block;">
+                    <canvas baseChart
+                        [datasets]="radarChartData"
+                        [options]="radarChartOptions"
+                        [labels]="radarChartLabels"
+                        [chartType]="radarChartType">
+                    </canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
 </div>

@@ -1,11 +1,19 @@
-<div style="display: block;">
-    <canvas baseChart width="400" height="400"
-        [datasets]="lineChartData"
-        [labels]="lineChartLabels"
-        [options]="lineChartOptions"
-        [colors]="lineChartColors"
-        [legend]="lineChartLegend"
-        [chartType]="lineChartType"
-        [plugins]="lineChartPlugin">
-    </canvas>
+<div class="container is-fluid">
+    <div class="columns is-centered">
+        <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <canvas baseChart width="400" height="400"
+                    [datasets]="lineChartData"
+                    [labels]="lineChartLabels"
+                    [options]="lineChartOptions"
+                    [colors]="lineChartColors"
+                    [legend]="lineChartLegend"
+                    [chartType]="lineChartType"
+                    [plugins]="lineChartPlugin">
+                </canvas>
+              </div>
+            </div>
+          </div>
+    </div>
 </div>
