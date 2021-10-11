@@ -5,14 +5,14 @@
               General
             </p>
             <ul class="menu-list">
-              <li><a [routerLink]="['/dashboard']">Dashboard</a></li>
+              <li><a [routerLink]="['/admin/dashboard']">Dashboard</a></li>
               <li><a></a></li>
             </ul>
             <p class="menu-label">
               Custom
             </p>
             <ul class="menu-list">
-              <li><a [routerLink]="['/settings']">Application</a></li>
+              <li><a [routerLink]="['/admin/settings']">Application</a></li>
               <li><a>Pages</a></li>
               <li *ngIf="!true">
                 <a class="is-active">Manage Your Team</a>
@@ -52,7 +52,7 @@
               <li><a>Components</a></li>
               <li><a>Table</a></li>
               <li><a>Cards</a></li>
-              <li><a>Charts</a></li>
+              <li><a [routerLink]="['/admin/charts']">Charts</a></li>
               <li><a>UI Kits</a></li>
               <li><a>Widgets</a></li>
               <li><a>Maps</a></li>

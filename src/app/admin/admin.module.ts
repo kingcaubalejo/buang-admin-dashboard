@@ -8,8 +8,8 @@ import { SidebarComponent } from '../core/sidebar/sidebar.component';
 
 const routes: Routes = [
   {
-    path: 'admin', 
-    redirectTo: '/dashboard',
+    path: '', 
+    redirectTo: '/admin/dashboard',
     pathMatch: 'full'
   },
   { 
@@ -28,7 +28,7 @@ const routes: Routes = [
     ]
 
   },
-  { path: '**', redirectTo: '/'} //Not Found Page
+  { path: '**', redirectTo: '/admin'} //Not Found Page
 ]
 
 @NgModule({
