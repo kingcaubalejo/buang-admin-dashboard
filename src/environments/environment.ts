@@ -2,8 +2,19 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
-  production: false
+import 'zone.js/dist/zone-error';
+
+const apiHost = '';
+const apiUrl = '';
+
+import { IEnvironment } from './ienvironment';
+
+export const environment: IEnvironment = {
+  production: false,
+  enableDebugTools: true,
+  logLevel: 'debug',
+  apiHost,
+  apiUrl
 };
 
 /*

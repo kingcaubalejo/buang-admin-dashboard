@@ -24,6 +24,27 @@ const routes: Routes = [
       }, {
         path: 'charts',
         loadChildren: () => import('./chart/chart.module').then(c => c.ChartModule)
+      }, {
+        path: 'animations',
+        loadChildren: () => import('./animations/animations.module').then(c => c.AnimationsModule)
+      }, {
+        path: 'cards',
+        loadChildren: () => import('./cards/cards.module').then(c => c.CardsModule)
+      }, {
+        path: 'components',
+        loadChildren: () => import('./components/components.module').then(c => c.ComponentsModule)
+      }, {
+        path: 'maps',
+        loadChildren: () => import('./maps/maps.module').then(c => c.MapsModule)
+      }, {
+        path: 'tables',
+        loadChildren: () => import('./table/table.module').then(c => c.TableModule)
+      }, {
+        path: 'ui-kits',
+        loadChildren: () => import('./ui-kits/ui-kits.module').then(c => c.UiKitsModule)
+      }, {
+        path: 'widgets',
+        loadChildren: () => import('./widgets/widgets.module').then(c => c.WidgetsModule)
       }
     ]
 
