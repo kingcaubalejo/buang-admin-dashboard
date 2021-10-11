@@ -8,7 +8,7 @@ import { SidebarComponent } from '../core/sidebar/sidebar.component';
 
 const routes: Routes = [
   {
-    path: '', 
+    path: 'admin', 
     redirectTo: '/dashboard',
     pathMatch: 'full'
   },

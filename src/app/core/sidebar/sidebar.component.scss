@@ -20,7 +20,6 @@
 #sidebar {
     position: fixed; 
     top: 64px;
-    height: calc(100% - 50px);
     width: 246px;
     overflow: hidden;
     z-index: 5;
@@ -29,6 +28,10 @@
     -ms-transition: width 0.3s;
     -o-transition: width 0.3s;
     transition: width 0.3s;
+
+    max-height: 100vh;
+    overflow-y: auto;
+    background-color: #1F2833;
 }
 
 #sidebar ul {
