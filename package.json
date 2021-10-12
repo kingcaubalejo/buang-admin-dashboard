@@ -22,6 +22,8 @@
     "@ng-bootstrap/ng-bootstrap": "^9.0.0",
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
+    "ag-grid-angular": "^26.1.0",
+    "ag-grid-community": "^26.1.0",
     "bootstrap": "^4.5.0",
     "bulma": "^0.9.3",
     "chart.js": "2.9.3",
