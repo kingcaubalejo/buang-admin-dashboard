@@ -1,63 +1,57 @@
-<div class="columns" id="sidebar">
-    <div class="column is-12" style="background-color: #1F2833;">
-        <aside class="menu">
-            <p class="menu-label">
-              General
-            </p>
-            <ul class="menu-list">
-              <li><a [routerLink]="['/admin/dashboard']">Dashboard</a></li>
-              <li><a></a></li>
-            </ul>
-            <p class="menu-label" *ngIf="!hide">
-              Custom
-            </p>
-            <ul class="menu-list" *ngIf="!hide">
-              <li><a [routerLink]="['/admin/settings']">Application</a></li>
-              <li><a>Pages</a></li>
-              <li>
-                <a class="is-active">Manage Your Team</a>
-                <ul>
-                  <li><a>Members</a></li>
-                  <li><a>Plugins</a></li>
-                  <li><a>Add a member</a></li>
-                </ul>
-              </li>
-              <li><a>Invitations</a></li>
-              <li><a>Cloud Storage Environment Settings</a></li>
-            </ul>
-            <p class="menu-label" *ngIf="!hide">
-              Layout
-            </p>
-            <ul class="menu-list" *ngIf="!hide">
-              <li><a>Themes</a></li>
-              <li><a>General</a></li>
-              <li><a>Builder</a></li>
-            </ul>
-            <p class="menu-label" *ngIf="!hide">
-              Elements
-            </p>
-            <ul class="menu-list" *ngIf="!hide">
-              <li><a>Invoice</a></li>
-              <li><a>Forms</a></li>
-              <li><a>Board</a></li>
-              <li><a>Calendar</a></li>
-              <li><a>Products</a></li>
-              <li><a>Icon</a></li>
-            </ul>
-            <p class="menu-label">
-              Features
-            </p>
-            <ul class="menu-list">
-              <li><a [routerLink]="['/admin/animations']">Animations</a></li>
-              <li><a [routerLink]="['/admin/components']">Components</a></li>
-              <li><a [routerLink]="['/admin/tables']">Table</a></li>
-              <li><a [routerLink]="['/admin/cards']">Cards</a></li>
-              <li><a [routerLink]="['/admin/charts']">Charts</a></li>
-              <li><a [routerLink]="['/admin/ui-kits']">UI Kits</a></li>
-              <li><a [routerLink]="['/admin/widgets']">Widgets</a></li>
-              <li><a [routerLink]="['/admin/maps']">Maps</a></li>
-            </ul>
-          </aside>
-    </div>
-</div>
-  
+<aside id="sidebar">
+  <div id="nav" class="menu" #navigation>
+    <p class="menu-label">General</p>
+    <ul class="menu-list">
+      <li><a [routerLink]="['/admin/dashboard']">Dashboard</a></li>
+    </ul>
+    <p class="menu-label" *ngIf="!hide">Custom</p>
+    <ul class="menu-list" *ngIf="!hide">
+      <li><a [routerLink]="['/admin/settings']">Application</a></li>
+      <li><a>Pages</a></li>
+      <li>
+        <a class="is-active">Manage Your Team</a>
+        <ul>
+          <li><a>Members</a></li>
+          <li><a>Plugins</a></li>
+          <li><a>Add a member</a></li>
+        </ul>
+      </li>
+      <li><a>Invitations</a></li>
+      <li><a>Cloud Storage Environment Settings</a></li>
+    </ul>
+    <p class="menu-label" *ngIf="!hide">Layout</p>
+    <ul class="menu-list" *ngIf="!hide">
+      <li><a>Themes</a></li>
+      <li><a>General</a></li>
+      <li><a>Builder</a></li>
+    </ul>
+    <p class="menu-label" *ngIf="!hide">Elements</p>
+    <ul class="menu-list" *ngIf="!hide">
+      <li><a>Invoice</a></li>
+      <li><a>Forms</a></li>
+      <li><a>Board</a></li>
+      <li><a>Calendar</a></li>
+      <li><a>Products</a></li>
+      <li><a>Icon</a></li>
+    </ul>
+    <p class="menu-label">Features</p>
+    <ul class="menu-list">
+      <li><a [routerLink]="['/admin/animations']">Animations</a></li>
+      <li><a [routerLink]="['/admin/components']">Components</a></li>
+      <li><a [routerLink]="['/admin/tables']">Table</a></li>
+      <li><a [routerLink]="['/admin/cards']">Cards</a></li>
+      <li><a [routerLink]="['/admin/charts']">Charts</a></li>
+      <li><a [routerLink]="['/admin/ui-kits']">UI Kits</a></li>
+      <li><a [routerLink]="['/admin/widgets']">Widgets</a></li>
+      <li><a [routerLink]="['/admin/maps']">Maps</a></li>
+      <li>
+        <a href="#" class="has-submenu">Level</a>
+        <ul class="submenu">
+          <li><a href="#">Level1</a></li>
+          <li><a href="#">Level2</a></li>
+          <li><a href="#">Level3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</aside>
