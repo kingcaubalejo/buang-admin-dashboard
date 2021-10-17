@@ -8,7 +8,7 @@
   background-color: #1f2833;
 
   height: 100%;
-  width: 250px;
+  width: 190px;
   position: fixed;
   z-index: 10;
 
@@ -24,18 +24,18 @@
   }
 }
 
-.submenu {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.2s ease-in-out;
-}
+// .submenu {
+//   max-height: 0;
+//   overflow: hidden;
+//   transition: all 0.2s ease-in-out;
+// }
 
-.menu-list li ul {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+// .menu-list li ul {
+//   margin-top: 0;
+//   margin-bottom: 0;
+// }
 
-.menu-list a.is-active {
-  background-color: #1f2833;
-  color: #fff;
-}
+// .menu-list a.is-active {
+//   background-color: #1f2833;
+//   color: #fff;
+// }

@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
 import { CardsComponent } from './cards.component';
+import { CardContentComponent } from './card-content/card-content.component';
+import { CardFooterComponent } from './card-footer/card-footer.component';
 
 const route: Routes = [
   { path: '', component: CardsComponent },
@@ -12,7 +14,11 @@ const route: Routes = [
 
 
 @NgModule({
-  declarations: [CardsComponent],
+  declarations: [
+    CardsComponent,
+    CardContentComponent,
+    CardFooterComponent,
+  ],
   imports: [
     CommonModule,
     RouterModule.forChild(route),

@@ -14,7 +14,8 @@ export const environment: IEnvironment = {
   enableDebugTools: true,
   logLevel: 'debug',
   apiHost,
-  apiUrl
+  apiUrl,
+  featureEnable: false
 };
 
 /*

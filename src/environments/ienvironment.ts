@@ -8,4 +8,5 @@ export interface IEnvironment {
     logLevel: LogLevel;
     apiUrl: string;
     apiHost: string;
+    featureEnable: boolean;
 }

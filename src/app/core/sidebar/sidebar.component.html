@@ -4,8 +4,8 @@
     <ul class="menu-list">
       <li><a [routerLink]="['/admin/dashboard']">Dashboard</a></li>
     </ul>
-    <p class="menu-label" *ngIf="!hide">Custom</p>
-    <ul class="menu-list" *ngIf="!hide">
+    <p class="menu-label" *ngIf="featureEnable">Custom</p>
+    <ul class="menu-list" *ngIf="featureEnable">
       <li><a [routerLink]="['/admin/settings']">Application</a></li>
       <li><a>Pages</a></li>
       <li>
@@ -19,14 +19,14 @@
       <li><a>Invitations</a></li>
       <li><a>Cloud Storage Environment Settings</a></li>
     </ul>
-    <p class="menu-label" *ngIf="!hide">Layout</p>
-    <ul class="menu-list" *ngIf="!hide">
+    <p class="menu-label" *ngIf="featureEnable">Layout</p>
+    <ul class="menu-list" *ngIf="featureEnable">
       <li><a>Themes</a></li>
       <li><a>General</a></li>
       <li><a>Builder</a></li>
     </ul>
-    <p class="menu-label" *ngIf="!hide">Elements</p>
-    <ul class="menu-list" *ngIf="!hide">
+    <p class="menu-label" *ngIf="featureEnable">Elements</p>
+    <ul class="menu-list" *ngIf="featureEnable">
       <li><a>Invoice</a></li>
       <li><a>Forms</a></li>
       <li><a>Board</a></li>
@@ -36,14 +36,14 @@
     </ul>
     <p class="menu-label">Features</p>
     <ul class="menu-list">
-      <li><a [routerLink]="['/admin/animations']">Animations</a></li>
-      <li><a [routerLink]="['/admin/components']">Components</a></li>
-      <li><a [routerLink]="['/admin/tables']">Table</a></li>
-      <li><a [routerLink]="['/admin/cards']">Cards</a></li>
-      <li><a [routerLink]="['/admin/charts']">Charts</a></li>
-      <li><a [routerLink]="['/admin/ui-kits']">UI Kits</a></li>
-      <li><a [routerLink]="['/admin/widgets']">Widgets</a></li>
-      <li><a [routerLink]="['/admin/maps']">Maps</a></li>
+      <li *ngIf="featureEnable"><a [routerLink]="['/admin/animations']">Animations</a></li>
+      <li *ngIf="featureEnable"><a [routerLink]="['/admin/components']">Components</a></li>
+      <li><a [routerLink]="['/admin/tables']" [routerLinkActive]="['is-active']">Table</a></li>
+      <li><a [routerLink]="['/admin/cards']" [routerLinkActive]="['is-active']">Cards</a></li>
+      <li><a [routerLink]="['/admin/charts']" [routerLinkActive]="['is-active']">Charts</a></li>
+      <li *ngIf="featureEnable"><a [routerLink]="['/admin/ui-kits']">UI Kits</a></li>
+      <li *ngIf="featureEnable"><a [routerLink]="['/admin/widgets']">Widgets</a></li>
+      <li *ngIf="featureEnable"><a [routerLink]="['/admin/maps']">Maps</a></li>
       <li>
         <a href="#" class="has-submenu">Level</a>
         <ul class="submenu">
